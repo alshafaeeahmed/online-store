@@ -11,11 +11,14 @@ export class AllProductsComponent implements OnInit {
   products: any[] = [];
   categories: any[] = [];
   loading: boolean = false;
+
   constructor(private servidce: ProductsService, private router: Router) {}
+
   ngOnInit(): void {
     this.getProducts();
     this.getCategories();
   }
+
   getProducts() {
     this.loading = true;
     this.servidce.getAllProducts().subscribe(
@@ -29,6 +32,7 @@ export class AllProductsComponent implements OnInit {
       }
     );
   }
+
   getCategories() {
     this.loading = true;
     this.servidce.getAllCategories().subscribe(
@@ -43,10 +47,12 @@ export class AllProductsComponent implements OnInit {
       }
     );
   }
+
   filterCategorie(event: any) {
     let value = event.target.value;
     value == 'all' ? this.getProducts() : this.getProductCategorie(value);
   }
+
   getProductCategorie(categorieType: string) {
     this.loading = true;
     this.servidce

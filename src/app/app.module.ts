@@ -8,7 +8,7 @@ import { ProductsModule } from './products/products.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, SharedModule,AppRoutingModule,CommonModule],
+  imports: [BrowserModule, SharedModule,AppRoutingModule,CommonModule,ProductsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
