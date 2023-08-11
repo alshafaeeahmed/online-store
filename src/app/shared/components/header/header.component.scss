@@ -1,56 +1,36 @@
-/* Basic styling for the navigation bar */
 nav {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  /* Center the content within the navigation bar */
+  background-color: #007bff;
+  color: white;
+
   .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 60px; /* Set the desired height */
+    padding: 1rem;
+
+    .content {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+
+        li {
+          margin-right: 1rem;
+          cursor: pointer;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #ffd700;
+          }
+        }
+      }
+    }
   }
-  
-  /* Style the content inside the navigation bar */
-  .content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px; /* Set the desired max width */
-    padding: 0 20px;
-  }
-  
-  /* Style the logo */
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  /* Style the navigation links (list items) */
-  ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Style each individual navigation link (list item) */
-  li {
-    margin: 0 15px;
-  }
-  
-  /* Apply styling to navigation links */
-  li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  /* Change color on hover */
-  li a:hover {
-    color: #ff6600;
-  }
-  
+}
