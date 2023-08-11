@@ -5,10 +5,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { ErrorComponent } from './components/error/error.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, ErrorComponent],
+  declarations: [HeaderComponent, FooterComponent, ErrorComponent, SpinnerComponent],
   imports: [CommonModule, RouterModule,HttpClientModule],
-  exports: [HeaderComponent,FooterComponent],
+  exports: [HeaderComponent,FooterComponent,ErrorComponent,SpinnerComponent],
 })
 export class SharedModule {}
