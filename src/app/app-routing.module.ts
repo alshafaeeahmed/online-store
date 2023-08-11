@@ -6,7 +6,7 @@ import { CartComponent } from 'src/carts/components/cart/cart.component';
 import { ErrorComponent } from './shared/components/error/error.component';
 const routes: Routes = [
   { path: 'products', component: AllProductsComponent },
-  { path: 'details', component: ProductsDetailsComponent },
+  { path: 'details/:id', component: ProductsDetailsComponent },
   { path: 'carts', component: CartComponent },
   { path: 'error', component: ErrorComponent },
   
