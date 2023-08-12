@@ -9,7 +9,6 @@ const routes: Routes = [
   { path: 'details/:id', component: ProductsDetailsComponent },
   { path: 'carts', component: CartComponent },
   { path: 'error', component: ErrorComponent },
-  
   { path: '**', redirectTo: 'products', pathMatch: 'full' },
 ];
 

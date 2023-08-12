@@ -9,6 +9,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { SelectComponent } from './select/select.component';
 import { ItemComponent } from './components/item/item.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent, ErrorComponent, SpinnerComponent, SelectComponent, ItemComponent],
